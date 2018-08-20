@@ -18,6 +18,8 @@
 	<a href="withdraw">Withdraw</a>
 	<br>
 	<a href="deposit">Deposit</a>
+	<br>
+	<a href="fundTransfer">Transfer</a>
 
 
 </body>

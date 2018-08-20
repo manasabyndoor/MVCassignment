@@ -10,5 +10,6 @@ public interface BankDao {
  public long deposit(int id1,int amount);
 public Customer searchById(int id);
 public List<Customer> viewAll();
+public long fundTransfer(int id1, int id2, int amount);
  
 }

@@ -27,9 +27,11 @@ public List<Customer> viewAll()
 	return dao.viewAll();
 	
 }
-public void transfer()
-{
-	
+
+
+@Override
+public long fundTransfer(int id1, int id2, int amount) {
+	return dao.fundTransfer(id1, id2, amount);
 }
 
 	

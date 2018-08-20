@@ -53,10 +53,21 @@ public class BankController {
 		
 		
 	}
+	@RequestMapping("/fundTransfer")
+	public String fundTransfer()
+	{	
 	
+		
+		return "fundTransfer";
 	
-	
-	
+	}
+	@RequestMapping("/transferred")
+	public String transferred(@RequestParam("id1") String id1,@RequestParam("id2") String id2,@RequestParam("transferamount") String amount,Model model)
+	{
+		int res=(int) service.fundTransfer(Integer.parseInt(id1),Integer.parseInt(id2),Integer.parseInt(amount));
+		model.addAttribute("result",res);
+		return "transferred";
+	}
 	
 	
 }
