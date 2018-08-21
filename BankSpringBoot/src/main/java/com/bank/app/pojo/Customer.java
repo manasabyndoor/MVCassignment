@@ -3,7 +3,7 @@ package com.bank.app.pojo;
 import java.time.LocalDate;
 
 public  class Customer {
-	private int customerId;
+	private String customerId;
 	private String customerName;
 	private long contactNumber;
 	private String emailId;
@@ -13,19 +13,13 @@ public  class Customer {
 	private long balance;
 	private static int custId;
 	
-	static {
-		custId = 200;
-	}
 	
-	{
-		this.customerId = ++custId;
-	}
 
-	public int getCustomerId() {
+	public String getCustomerId() {
 		return customerId;
 	}
 
-	public void setCustomerId(int customerId) {
+	public void setCustomerId(String customerId) {
 		this.customerId = customerId;
 	}
 
@@ -85,7 +79,7 @@ public  class Customer {
 		Customer.custId = custId;
 	}
 
-	public Customer(int customerId, String customerName, long contactNumber, String emailId, String nationality,
+	public Customer(String customerId, String customerName, long contactNumber, String emailId, String nationality,
 			String gender, long balance) {
 		super();
 		this.customerId = customerId;
